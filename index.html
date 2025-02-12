@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Ultimate AI Co-Pilot for Investors</h1>
+        <p class="green-text">Build, analyze, and accelerate your deal flow with EdenCode—the AI-powered intelligence engine designed for venture capital firms.</p>
+        
+        <form id="roi-form">
+            <label for="firm-size">Firm Size:</label>
+            <select id="firm-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="hours">Hours Spent on Research per Week:</label>
+            <input type="number" id="hours" required>
+
+            <label for="deal-size">Avg. Deal Size ($M):</label>
+            <input type="number" id="deal-size" required>
+
+            <label for="missed-deals">Missed Deals per Year:</label>
+            <input type="number" id="missed-deals" required>
+
+            <label for="analyst-cost">Cost of Analysts per Year ($):</label>
+            <input type="number" id="analyst-cost" required>
+
+            <button type="button" onclick="calculateROI()">Calculate ROI</button>
+        </form>
+
+        <div id="results">
+            <p id="time-saved"></p>
+            <p id="missed-opportunities"></p>
+            <p id="cost-savings"></p>
+            <p id="faster-due-diligence"></p>
+            <p id="recovered-deals"></p>
+        </div>
+
+        <button id="cta">See how much you can save—request your personalized ROI analysis now!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
