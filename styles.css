@@ -58,12 +58,19 @@ input, select {
 /* Ensure white text color in dropdown */
 select {
     color: #ffffff; /* White text color */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
 }
 
 /* Focus effects */
 input:focus, select:focus {
     background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on focus */
     border-color: rgba(255, 255, 255, 0.5); /* Darker border on focus */
+}
+
+/* Additional styles for dropdown options */
+select option {
+    background: rgba(30, 30, 30, 0.9); /* Dark background for options */
+    color: #ffffff; /* White text color for options */
 }
 
 /* Additional spacing for form elements */
