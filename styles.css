@@ -55,9 +55,24 @@ input, select {
     transition: background 0.3s ease; /* Smooth transition */
 }
 
+/* Ensure white text color in dropdown */
+select {
+    color: #ffffff; /* White text color */
+}
+
+/* Focus effects */
 input:focus, select:focus {
     background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on focus */
     border-color: rgba(255, 255, 255, 0.5); /* Darker border on focus */
+}
+
+/* Additional spacing for form elements */
+form label {
+    margin-bottom: 10px; /* Increased spacing between label and input */
+}
+
+form input, form select {
+    margin-bottom: 20px; /* Increased spacing between inputs */
 }
 
 button {
